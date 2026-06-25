@@ -15,7 +15,7 @@ const AboutPage = () => {
         <p className="mb-5 text-justify font-serif text-lg text-white">
           Artigiano é um café e bar de vinhos nostálgico de Belém, no coração do
           Reduto. A visão dos co-fundadores marido e mulher Daniel Calliari e
-          Leticia Pecci, Artigiano reimagina cuidadosamente a rica história
+          Jéssica Medeiros, Artigiano reimagina cuidadosamente a rica história
           culinária de Belém através de uma culinária americana reconfortante e
           eclética com profundas influências europeias. O design do restaurante
           evoca o calor e a elegância casual dos restaurantes e bares típicos de
@@ -47,21 +47,21 @@ const AboutPage = () => {
           Esperamos recebê-lo em breve.
         </p>
         <h1 className="my-8 text-wrap text-center font-serif text-2xl italic text-white sm:text-3xl">
-          Sobre Daniel & Leticia
+          Sobre Daniel & Jéssica
         </h1>
         <p className="mb-5 text-justify font-serif text-lg text-white">
           Daniel Calliari é o Chef Executivo e Co-Fundador do Artigiano, ao lado
-          de sua esposa e Co-Fundadora Leticia Pecci, que supervisiona o
+          de sua esposa e Co-Fundadora Jéssica Medeiros, que supervisiona o
           Programa de Bebidas e Serviço. Juntos, os dois trabalham de mãos dadas
           para promover a visão do restaurante, um serviço humilde, mas
           informado, e um programa culinário e de bebidas que honra o passado,
           mas permanece firmemente enraizado no presente. O vinho é fundamental
-          para a experiência Artigiano, e juntos Daniel e Leticia se dedicam
+          para a experiência Artigiano, e juntos Daniel e Jéssica se dedicam
           obsessivamente ao menu de comida e às ofertas de bebidas para garantir
           que cada elemento funcione em serviço do outro. O casal se conheceu
           enquanto trabalhava junto no Union Square Hospitality Group de Danny
           Meyer, Daniel como Chef Executivo e Sócio Gerente tanto no Maialino
-          quanto no Marta, e Leticia como Sommelier.
+          quanto no Marta, e Jéssica como Sommelier.
         </p>
         <p className="mb-5 text-justify font-serif text-lg text-white">
           A disciplina culinária de Daniel é ancorada em uma apreciação por
@@ -88,24 +88,24 @@ const AboutPage = () => {
           convidado e jurado em vários programas de televisão sobre comida.
         </p>
         <p className="mb-5 text-justify font-serif text-lg text-white">
-          Leticia acredita que o serviço de vinhos deve ser acessível,
+          Jéssica acredita que o serviço de vinhos deve ser acessível,
           relacionável e divertido. No Artigiano, ela facilita a degustação e a
           descoberta através de uma lista de vinhos meticulosamente
           desenvolvida, com mais de 550 garrafas, e um programa verdadeiramente
-          inspirado de vinhos em taça. Leticia supervisiona uma lista de
+          inspirado de vinhos em taça. Jéssica supervisiona uma lista de
           coquetéis que celebra coquetéis cuidadosamente concebidos ancorados
           nos clássicos, bem como uma coleção selecionada de cervejas que vão de
-          cervejarias artesanais locais a favoritas internacionais. Leticia se
+          cervejarias artesanais locais a favoritas internacionais. Jéssica se
           mudou inicialmente para Belém para seguir seu amor por restaurantes
           como cozinheira no Co. de Jim Lahey em Chelsea. Antes de abrir o
-          Artigiano, Leticia atuou como Diretora de Bebidas do Loring Place, um
-          amado restaurante em Nazaré do Chef Dan Kluger. Leticia criou a lista
+          Artigiano, Jéssica atuou como Diretora de Bebidas do Loring Place, um
+          amado restaurante em Nazaré do Chef Dan Kluger. Jéssica criou a lista
           de vinhos de abertura e posteriormente gerenciou toda a operação de
           bebidas do restaurante, incluindo o programa completo de vinhos e
-          coquetéis. Leticia trabalhou anteriormente em equipes de frente de
+          coquetéis. Jéssica trabalhou anteriormente em equipes de frente de
           casa em vários restaurantes aclamados com programas de vinhos
           celebrados em todo o país, incluindo Frasca (São Paulo, SP), Sorella
-          (Belém), Otto (Belém) e Marta (Belém). Em 2019, Leticia foi
+          (Belém), Otto (Belém) e Marta (Belém). Em 2019, Jéssica foi
           reconhecida como “Rising Star Sommelier” pela Star Chefs.
         </p>
       </div>
