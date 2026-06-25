@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { CalendarDays } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
   SheetTrigger,
@@ -24,23 +25,31 @@ import {
   Popover,
 } from '@/components/ui/popover'
 import { Calendar } from '@/components/ui/calendar'
+import { useToast } from '@/components/ui/use-toast'
 
-export function SideMenu() {
-  const [selectedDate, setSelectedDate] = useState(null)
+const GOOGLE_BOOKING_URL = 'https://maps.app.goo.gl/fnNPvmhLtxyhdAs58'
+
+export function ReservationSheet() {
+  const [selectedDate, setSelectedDate] = useState<Date | null>(null)
   const [selectedPeople, setSelectedPeople] = useState('')
+  const { toast } = useToast()
 
   const handleReservation = () => {
     if (!selectedPeople) {
-      alert(
-        'Por favor, selecione a quantidade de pessoas antes de fazer a reserva.',
-      )
+      toast({
+        description: 'Por favor, selecione a quantidade de pessoas.',
+        variant: 'destructive',
+      })
       return
     }
     if (!selectedDate) {
-      alert('Por favor, selecione uma data antes de fazer a reserva.')
+      toast({
+        description: 'Por favor, selecione uma data.',
+        variant: 'destructive',
+      })
       return
     }
-    alert('Reserva feita com sucesso!')
+    window.open(GOOGLE_BOOKING_URL, '_blank', 'noopener,noreferrer')
   }
 
   return (
@@ -80,9 +89,9 @@ export function SideMenu() {
             <Popover>
               <PopoverTrigger asChild>
                 <Button className="w-full" variant="outline" size="lg">
-                  <CalendarDaysIcon className="mr-2 size-4 opacity-50" />
+                  <CalendarDays className="mr-2 size-4 opacity-50" />
                   {selectedDate
-                    ? selectedDate.toLocaleDateString()
+                    ? selectedDate.toLocaleDateString('pt-BR')
                     : 'Escolha uma Data'}
                 </Button>
               </PopoverTrigger>
@@ -91,7 +100,7 @@ export function SideMenu() {
                 className="w-auto bg-zinc-700 p-0 text-white"
               >
                 <Calendar
-                  onSelectDate={(date) => {
+                  onSelectDate={(date: Date) => {
                     setSelectedDate(date)
                   }}
                 />
@@ -106,7 +115,7 @@ export function SideMenu() {
             size="lg"
             onClick={handleReservation}
           >
-            Reservar
+            Reservar pelo Google
           </Button>
           <SheetClose asChild>
             <Button className="w-full" variant="gray" size="lg">
@@ -116,33 +125,5 @@ export function SideMenu() {
         </SheetFooter>
       </SheetContent>
     </Sheet>
-  )
-}
-
-function CalendarDaysIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M8 2v4" />
-      <path d="M16 2v4" />
-      <rect width="18" height="18" x="3" y="4" rx="2" />
-      <path d="M3 10h18" />
-      <path d="M8 14h.01" />
-      <path d="M12 14h.01" />
-      <path d="M16 14h.01" />
-      <path d="M8 18h.01" />
-      <path d="M12 18h.01" />
-      <path d="M16 18h.01" />
-    </svg>
   )
 }

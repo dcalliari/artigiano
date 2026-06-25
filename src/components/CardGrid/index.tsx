@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { Card } from '@/components/ui/card'
-import { Toaster } from '@/components/ui/toaster'
 import { useToast } from '@/components/ui/use-toast'
 import {
   Dialog,
@@ -227,7 +226,6 @@ export function CardGrid() {
           </div>
         </DialogContent>
       </Dialog>
-      <Toaster />
     </div>
   )
 }
