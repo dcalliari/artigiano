@@ -36,7 +36,7 @@ const SignIn = () => {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-900">
-      <div className="w-96 bg-zinc-700 p-4 shadow-xl">
+      <div className="mx-4 w-full max-w-sm bg-zinc-700 p-4 shadow-xl">
         <div className="bg-zinc-900 p-5">
           <h1 className="mb-5 text-center font-serif text-2xl text-red-400">
             ENTRE

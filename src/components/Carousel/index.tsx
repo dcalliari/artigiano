@@ -43,7 +43,7 @@ export function Carousel({ images }: CarouselProps) {
       <div className="absolute bottom-20 left-1/2 flex -translate-x-1/2 gap-4">
         <Image
           loading="eager"
-          className="w-fit"
+          className="h-auto w-32 sm:w-48 md:w-64"
           src="/logo-white.png"
           alt="Logo"
           width={350}

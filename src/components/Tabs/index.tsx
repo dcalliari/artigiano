@@ -11,7 +11,7 @@ export function Tabs() {
   }
   return (
     <div className="container">
-      <div className="tabs mb-5 px-6 pb-7 pt-14">
+      <div className="tabs mb-5 flex flex-wrap gap-2 px-4 pb-7 pt-10 sm:px-6 sm:pt-14">
         {tabs.map((tab) => (
           <button
             className={`hover:border-gray-500 hover:text-gray-500 ${currentTab === tab.id.toString() ? 'btn border-gray-500 text-gray-500' : 'btn'}`}
@@ -25,7 +25,7 @@ export function Tabs() {
         ))}
       </div>
       <div className="content">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {tabs
             .find((tab) => tab.id.toString() === currentTab)
             ?.sections.map((section) => (

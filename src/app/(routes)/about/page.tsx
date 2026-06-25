@@ -8,8 +8,8 @@ const AboutPage = () => {
   return (
     <div>
       <Carousel images={IMAGES} />
-      <div className="m-auto block w-[58rem]">
-        <h1 className="m-10 text-wrap text-center font-serif text-5xl italic text-white">
+      <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h1 className="my-8 text-wrap text-center font-serif text-3xl italic text-white sm:text-5xl">
           Nossa História
         </h1>
         <p className="mb-5 text-justify font-serif text-lg text-white">
@@ -46,7 +46,7 @@ const AboutPage = () => {
         <p className="mb-5 text-justify font-serif text-lg text-white">
           Esperamos recebê-lo em breve.
         </p>
-        <h1 className="m-10 text-wrap text-center font-serif text-3xl italic text-white">
+        <h1 className="my-8 text-wrap text-center font-serif text-2xl italic text-white sm:text-3xl">
           Sobre Daniel & Leticia
         </h1>
         <p className="mb-5 text-justify font-serif text-lg text-white">

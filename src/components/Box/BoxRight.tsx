@@ -18,8 +18,8 @@ export function BoxRight({
   imageSrc,
 }: BoxRightProps) {
   return (
-    <div className="m-2 mb-4 flex flex-row">
-      <div className="relative mx-2 w-1/2 bg-slate-500">
+    <div className="m-2 mb-4 flex flex-col sm:flex-row">
+      <div className="relative mx-2 min-h-[240px] w-full bg-slate-500 sm:min-h-0 sm:w-1/2">
         <Image
           loading="lazy"
           src={imageSrc}
@@ -28,11 +28,11 @@ export function BoxRight({
           className="object-cover"
         />
       </div>
-      <div className="mx-2 w-1/2 bg-zinc-900 px-12 py-24 text-white">
-        <h2 className="mb-4 text-wrap font-serif text-3xl italic text-white lg:w-3/4 xl:w-1/2">
+      <div className="mx-2 w-full bg-zinc-900 px-6 py-10 text-white sm:w-1/2 sm:px-8 sm:py-16 lg:px-12 lg:py-24">
+        <h2 className="mb-4 text-wrap font-serif text-2xl italic text-white sm:text-3xl lg:w-3/4 xl:w-1/2">
           {name}
         </h2>
-        <p className="mb-16 font-serif text-lg">{description}</p>
+        <p className="mb-10 font-serif text-lg sm:mb-16">{description}</p>
         <Button href={buttonHref} title={button} />
       </div>
     </div>

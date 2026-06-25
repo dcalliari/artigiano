@@ -6,8 +6,8 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       <Gallery />
-      <section className="container content-center items-center px-8 pb-12 pt-16 text-center">
-        <h2 className="mx-auto text-wrap font-serif text-3xl italic text-white lg:w-3/4 xl:w-1/2">
+      <section className="container content-center items-center px-4 pb-8 pt-10 text-center sm:px-8 sm:pb-12 sm:pt-16">
+        <h2 className="mx-auto text-wrap font-serif text-xl italic text-white sm:text-3xl lg:w-3/4 xl:w-1/2">
           Um restaurante mediterrâneo aconchegante e nostálgico e um bar de
           vinhos no coração de Belém
         </h2>

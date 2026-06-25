@@ -10,8 +10,8 @@ const MenuPage = () => {
   return (
     <div>
       <Carousel images={IMAGES} />
-      <div className="m-auto block w-[58rem]">
-        <h1 className="m-10 text-wrap text-center font-serif text-5xl italic text-white">
+      <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h1 className="my-8 text-wrap text-center font-serif text-3xl italic text-white sm:text-5xl">
           Comunidade
         </h1>
         <p className="text-justify font-serif text-lg text-white">

@@ -94,7 +94,7 @@ export function CardGrid() {
   }
 
   return (
-    <div className="mx-auto grid max-w-5xl grid-cols-2 gap-2 py-10">
+    <div className="mx-auto grid max-w-5xl grid-cols-1 gap-2 px-4 pb-24 pt-10 sm:grid-cols-2 sm:px-0">
       {dishes.map((dish) => (
         <Card
           key={dish.name}
