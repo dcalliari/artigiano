@@ -1,4 +1,5 @@
 import { Sidebar } from '@/components/Sidebar'
+import { MobileNav } from '@/components/MobileNav'
 
 export default function Layout({
   children,
@@ -7,9 +8,10 @@ export default function Layout({
 }>) {
   return (
     <>
+      <MobileNav />
       <Sidebar />
-      <main className="flex overflow-y-auto">
-        <div className="ml-64 flex size-full flex-col">{children}</div>
+      <main className="flex overflow-y-auto pt-14 lg:pt-0">
+        <div className="flex size-full flex-col lg:ml-64">{children}</div>
       </main>
     </>
   )
