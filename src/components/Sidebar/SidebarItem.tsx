@@ -21,13 +21,11 @@ export function SidebarItem({ item }: { item: ISidebarItem }) {
   return (
     <>
       <div
-        className={`hover:bg-sidebar-background flex cursor-pointer items-center justify-between rounded-lg p-3 transition-colors duration-500 hover:text-white
+        className={`hover:bg-sidebar-background flex cursor-pointer items-center justify-center rounded-lg p-3 text-center transition-colors duration-500 hover:text-white
      ${isActive && 'text-sidebar-active bg-sidebar-background'}`}
         onClick={onClick}
       >
-        <div className="flex items-center space-x-2">
-          <p className="font-serif text-lg">{name}</p>
-        </div>
+        <p className="font-serif text-lg">{name}</p>
       </div>
     </>
   )

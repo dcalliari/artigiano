@@ -4,9 +4,6 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Menu } from 'lucide-react'
-import { useAuthState } from 'react-firebase-hooks/auth'
-import { signOut } from 'firebase/auth'
-import { auth } from '@/app/firebase'
 import { navItems } from '@/components/Sidebar/navItems'
 import { SidebarItem } from '@/components/Sidebar/SidebarItem'
 import {
@@ -18,16 +15,6 @@ import {
 
 export function MobileNav() {
   const [open, setOpen] = useState(false)
-  const [user] = useAuthState(auth)
-
-  const handleSignOut = async () => {
-    try {
-      await signOut(auth)
-    } catch (error) {
-      console.error('Error signing out:', error)
-    }
-    setOpen(false)
-  }
 
   return (
     <header className="fixed inset-x-0 top-0 z-20 flex h-14 items-center justify-between bg-zinc-900 px-4 lg:hidden">
@@ -88,37 +75,6 @@ export function MobileNav() {
                 </div>
               </SheetClose>
             ))}
-
-            {!user ? (
-              <div className="flex-row pt-10">
-                <SheetClose asChild>
-                  <Link
-                    href="/sign-in"
-                    className="cursor-pointer font-serif text-lg transition-colors duration-500 hover:text-white"
-                  >
-                    ENTRE
-                  </Link>
-                </SheetClose>
-                <span className="mx-3 font-serif">ou</span>
-                <SheetClose asChild>
-                  <Link
-                    href="/sign-up"
-                    className="cursor-pointer font-serif text-lg transition-colors duration-500 hover:text-white"
-                  >
-                    REGISTRE
-                  </Link>
-                </SheetClose>
-              </div>
-            ) : (
-              <div className="pt-10">
-                <button
-                  className="cursor-pointer font-serif text-lg transition-colors duration-500 hover:text-white"
-                  onClick={handleSignOut}
-                >
-                  SAIR
-                </button>
-              </div>
-            )}
           </nav>
         </SheetContent>
       </Sheet>
