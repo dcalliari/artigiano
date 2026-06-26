@@ -102,6 +102,7 @@ export function CardGrid() {
           <img
             src={dish.photo}
             alt={dish.name}
+            loading="lazy"
             className="size-40 rounded-l-md object-cover"
           />
           <div className="flex-1 space-y-2 p-4">

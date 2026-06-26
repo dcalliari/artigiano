@@ -14,12 +14,12 @@ export function DesktopSidebar({ items }: DesktopSidebarProps) {
     <div className="flex w-full flex-col items-center space-y-10 text-red-400">
       <Link href="/" className="pt-14">
         <Image
-          loading="eager"
-          className="w-fit"
           src="/logo.png"
-          alt="Logo"
-          width={2000}
+          alt="Artigiano"
+          width={200}
           height={0}
+          className="h-auto w-full"
+          priority
         />
       </Link>
       <div className="border-y border-red-100 py-7 text-center font-serif text-sm italic transition-colors duration-500 hover:text-white">
